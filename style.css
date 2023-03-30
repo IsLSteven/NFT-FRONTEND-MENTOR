@@ -1,0 +1,122 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    width: 270px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.card .image-link{
+    position: relative;
+    display: flex;
+}
+
+.card .image-link .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.card .image-link::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    background-image: url("./nft-preview-card-component-main/nft-preview-card-component-main/images/icon-view.svg");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    border-radius: 7px;
+  }
+
+  .image-link:hover::before {
+    display: block;
+  }
+
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: cyan;
+}
+
+h2{
+    margin-top: 15px;
+}
+
+
+.text{
+    margin: 15px 0 15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.dados{
+    display: flex ;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+
+.dados .ETH{
+    color: cyan;
+    display: flex;
+}
+
+.dados .ETH::before{
+    content: '';
+    background: url(./nft-preview-card-component-main/nft-preview-card-component-main/images/icon-ethereum.svg) no-repeat center;
+    width: 11px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dados .time{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    gap: 5px;
+}
+
+.dados .time::before{
+    content: '';
+    background: url(./nft-preview-card-component-main/nft-preview-card-component-main/images/icon-clock.svg) no-repeat center;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+}
+
+.infos{
+    display: flex ;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    border-top: 1px solid  hsl(214, 31%, 27%);
+    padding-top: 15px;
+}
+
+
+.avatar {
+    width: 30px;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: white  2px solid;
+}
+
+.nome{
+    margin: 0 0 0 3px;
+}
+
+
+
